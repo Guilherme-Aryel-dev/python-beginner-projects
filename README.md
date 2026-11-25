@@ -18,9 +18,9 @@ A simple cashier system for a snack bar. The attendant enters the customer's nam
 **Example:**
 ```
 Can you tell me your name? Aryel
-Burger: 25
-Fries: 12
-Soda: 8
+Burger price: 25
+Fries price: 12
+Soda price: 8
 
 Customer: Aryel
 Burger: 25
@@ -42,12 +42,40 @@ A registration system for a gym. It collects the member's data and validates eac
 **Example:**
 ```
 Name: Aryel | Only letters? True
-Username: aryel2026 | Letters/digits only? True | Lowercase? True
+Username: aryel2026 | Letters and digits only? True | Lowercase? True
 Plan: VIP | Uppercase? True
 Age: 18 | Only digits? True | Next year: 19
 Current weight: 80.0 kg
 Weight type: <class 'float'>
 Goal: +3.5 kg | Target weight: 83.5 kg
+```
+
+---
+
+### 3. 🚗 Ride Receipt
+📁 `ride-receipt/`
+
+A receipt generator for a ride-hailing app. It reads the ride data, calculates the fare and splits the total between passengers.
+
+**Concepts practiced:** `float()`, `int()`, arithmetic operators (`//`, `%`), string methods, string multiplication, f-string alignment and formatting (`^`, `:>10.2f`)
+
+**Example:**
+```
+==============================
+         TRIP RECEIPT
+==============================
+Passenger name: Aryel | Only letters? True
+Plate: ABC1D23 | Valid? True | Uppercase? True
+Distance: 12.5 km
+Duration: 1h 15 min
+------------------------------
+Base fare:     R$       5.00
+Distance:      R$      26.25
+Time:          R$      26.25
+------------------------------
+TOTAL:         R$      57.50
+Per passenger: R$      28.75
+==============================
 ```
 
 ---
